@@ -20,7 +20,7 @@ class CategoryImageInline(admin.TabularInline):
 
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('__unicode__', 'description', 'current_price', 'order', 'categories', 'page')
+    list_display = ('__unicode__', 'description', 'current_price', 'order', 'categories', 'page', 'active')
 
     inlines = [TagInline, ProductImageInline]
 
